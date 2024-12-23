@@ -1,0 +1,21 @@
+{
+  "name": "playwrightframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:dev": "ENV=dev npx playwright test --project=chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.1.0",
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.8.4",
+    "dotenv": "16.4.5"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
