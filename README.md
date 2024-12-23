@@ -15,6 +15,12 @@ Testing Framework with basic setup and functionality
 ## Run Tests
 
 Check the `scripts` section in `package.json` file to see how to run tests
-or follow the next command as an example
-`ENV=dev npx playwright test` for multiple browser 
-`ENV=dev npx playwright test --project=chromium` for particular browser
+or follow the next command as an example  
+`ENV=dev npx playwright test` for multiple browser  
+`ENV=dev npx playwright test --project=chromium` for particular browser  
+
+## Visualize Report
+
+In order to see the report after the execution, follow the command  
+`npx playwright show-report`  
+Or you can simple open up the index.html file located under the `/playwright-report/` folder

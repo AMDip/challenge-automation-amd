@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:dev": "ENV=dev npx playwright test --project=chromium"
+    "test:dev": "ENV=dev npx playwright test"
   },
   "keywords": [],
   "author": "",
