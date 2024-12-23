@@ -29,6 +29,6 @@ export class ResultPageChecker extends BasePageChecker {
         const fileStat = fs.statSync(savedImagePath);
         const fileSizeInBytes = fileStat.size;
         await expect(fileSizeInBytes, 'File size greather than permited').not.toBeGreaterThan(this.MAX_BYTES);
-        await expect(extensionType.match(/\.(jpg|jpeg|png|gif)$/i), 'Not suporter image type').toBeTruthy();
+        await expect(extensionType.match(/\.(jpg|jpeg|png|gif)$/i), 'Not supported image type').toBeTruthy();
     }
 }

@@ -1,14 +1,10 @@
 import { test } from './fixtures/PomFixtures';
-import { da, faker } from '@faker-js/faker';
 import { readDataFromExcelFile } from './utils/readDataFromExcelFile';
 import { TestDataInterface } from './resources/TestDataInterface';
 import { ResultPage } from '../pages/resultpage/ResultPage';
 
 test.describe('Feature: Web Test Challenge', () => {
 
-    const RANDOM_NUMBER = faker.number.int({ min: 1, max: 20 });
-    const SIGNUP_NAME = faker.person.fullName();
-    const SIGNUP_EMAIL = faker.internet.email();
     const dataFromExcel: TestDataInterface[] = readDataFromExcelFile('testData.xlsx');
 
     for(const data of dataFromExcel){
