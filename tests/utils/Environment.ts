@@ -3,4 +3,5 @@
  */
 export class Env {
     public static BASE_URL: string = process.env.BASE_URL as string;
+    public static SECRET_KEY: string = process.env.KEY as string;
 }

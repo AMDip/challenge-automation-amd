@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:dev": "ENV=dev npx playwright test"
+    "test:dev": "ENV=dev KEY=secret_key npx playwright test"
   },
   "keywords": [],
   "author": "",
@@ -12,10 +12,12 @@
   "devDependencies": {
     "@faker-js/faker": "^9.1.0",
     "@playwright/test": "^1.48.2",
+    "@types/crypto-js": "^4.2.2",
     "@types/node": "^22.8.4",
     "dotenv": "16.4.5"
   },
   "dependencies": {
+    "crypto-js": "^4.2.0",
     "xlsx": "^0.18.5"
   }
 }

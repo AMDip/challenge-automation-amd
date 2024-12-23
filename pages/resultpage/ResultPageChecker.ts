@@ -22,9 +22,6 @@ export class ResultPageChecker extends BasePageChecker {
     }
 
     async checkFileSizeByName(savedImagePath: string) {
-        // const folderPath = 'images' + path.sep;
-        // const filePath = folderPath + fileName;
-        console.log("FILE PATH:" + savedImagePath);
         const extensionType = path.extname(savedImagePath);
         const fileStat = fs.statSync(savedImagePath);
         const fileSizeInBytes = fileStat.size;

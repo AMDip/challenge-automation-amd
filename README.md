@@ -9,15 +9,15 @@ Testing Framework with basic setup and functionality
 ## Setup
 
 1. Clone the repo
-2. cd into PlaywrightFramework
+2. cd into root folder
 3. run `npm install`
 
 ## Run Tests
 
 Check the `scripts` section in `package.json` file to see how to run tests
 or follow the next command as an example  
-`ENV=dev npx playwright test` for multiple browser  
-`ENV=dev npx playwright test --project=chromium` for particular browser  
+`ENV=dev KEY=secret_key npx playwright test` for multiple browser  
+`ENV=dev KEY=secret_key npx playwright test --project=chromium` for particular browser  
 
 ## Visualize Report
 

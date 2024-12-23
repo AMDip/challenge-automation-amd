@@ -1,4 +1,4 @@
-export function getDateAndTime(): string {
+export function getEndTestDateAndTime(): string {
     const currentdate = new Date(); 
     const currentDateAndTime = currentdate.getDate() + "/"
     + (currentdate.getMonth()+1)  + "/" 
@@ -6,5 +6,5 @@ export function getDateAndTime(): string {
     + currentdate.getHours() + ":"  
     + currentdate.getMinutes() + ":" 
     + currentdate.getSeconds();
-    return currentDateAndTime;
+    return 'Test Ended at: ' + currentDateAndTime;
 }

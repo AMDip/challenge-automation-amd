@@ -14,7 +14,7 @@ export class HomePage extends BasePage {
     }
 
     get homePageTittle(): Locator {
-        return this.page.getByText('The Free Encyclopedia');
+        return this.page.getByAltText('The Free Encyclopedia');
     }
 
     async searchByName(name: string): Promise<ResultPage> {
